@@ -1,3 +1,3 @@
 # deploy/after_install/
 #!/bin/bash
-sudo service apache2 restart
+service httpd restart > /var/log/restartapache.out 2>&1
